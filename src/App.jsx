@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import TopProducts from './components/TopProducts/TopProducts'
 
 const App = () => {
   React.useEffect(() => {
@@ -24,6 +25,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Products/>
+      <TopProducts />
     </div>
   )
 }
