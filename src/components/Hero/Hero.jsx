@@ -5,27 +5,28 @@ import Image3 from '../../assets/hero/sale.png'
 import Slider from "react-slick";
 
 const ImageList = [
-    {
-        id: 1,
-        img: Image1,
-        title: "Upto 50% of on all Men's Wears",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis.",
-    },
-    {
-        id: 2,
-        img: Image2,
-        title: "30% off on all Women's Wears",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis.",
-    },
-    {
-        id: 3,
-        img: Image3,
-        title: "70% off on all Products Sale",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at erat id ligula efficitur facilisis.",
-    }
+  {
+    id: 1,
+    img: Image1,
+    title: "Flash Sale: Up to 50% Off on Men's Fashion ",
+    description:
+        "Step up your style game with our hottest deals on jackets, shirts, and more. Limited time only!",
+},
+{
+    id: 2,
+    img: Image2,
+    title: "Exclusive: 30% Off All Women's Collection",
+    description:
+        "From elegant dresses to trendy tops—refresh your wardrobe with our handpicked women's fashion.",
+},
+{
+    id: 3,
+    img: Image3,
+    title: "Mega Clearance: 70% Off Everything!",
+    description:
+        "Don't miss the final markdowns of the season. Grab your favorites before they're gone forever!",
+}
+
 ]
 
 const Hero = () => {
@@ -59,20 +60,35 @@ const Hero = () => {
               {/* text content section */}
               <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left
               order-2 sm:order-1 relative z-10">
-                <h1 className='text-5xl sm:text-6xl lg:text-7xl font-bold'>
+                <h1 
+                data-aos = "zoom-in"
+                data-aos-duration = "500"
+                data-aos-once = "true"
+                className='text-5xl sm:text-5xl lg:text-6xl font-bold'>
                   {data.title}
                 </h1>
-                <p className='text-sm'>
+                <p 
+                data-aos = "fade-up"
+                data-aos-duration = "500"
+                dara-aos-delay = "100"
+                className='text-sm'>
                   {data.description}
                 </p>
-                <div>
+                <div
+                data-aos = "fade-up"
+                data-aos-duration = "500"
+                dara-aos-delay = "300"
+                >
                   <button className='bg-gradient-to-r from-[#F23329] to-[#d7615b] hover:scale-105 duration-200 text-white py-2 px-4 rounded-full cursor-pointer'>
                     Order Now
                   </button>
                 </div>
               </div>
               {/* image section */}
-              <div className='order-1 sm:order-2'>
+              <div
+                data-aos = "zoom-in"
+                data-aos-once = "true"
+                className='order-1 sm:order-2'>
                 <div className='relative z-10' >
                   <img src={data.img} alt=""
                   className='w-[300px] h-[300px] sm:h-[450px] sm:w-[450px] sm:scale-105 lg:scale-120 object-contain mx-auto'/>
